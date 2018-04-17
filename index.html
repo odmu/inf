@@ -457,7 +457,7 @@ Share = {
                 text:   '',
             }, _options);
 
-        return 'http://www.facebook.com/sharer.php?s=100'
+        return 'https://www.facebook.com/sharer.php?s=100'
             + '&p[title]='     + encodeURIComponent(options.title)
             + '&p[summary]='   + encodeURIComponent(options.text)
             + '&p[url]='       + encodeURIComponent(options.url)
@@ -472,7 +472,7 @@ Share = {
                 text:   '',
             }, _options);
 
-        return 'http://livejournal.com/update.bml?'
+        return 'https://livejournal.com/update.bml?'
             + 'subject='        + encodeURIComponent(options.title)
             + '&event='         + encodeURIComponent(options.text + '<br/><a href="' + options.url + '">' + options.title + '</a>')
             + '&transform=1';
@@ -486,7 +486,7 @@ Share = {
                 title:      document.title,
             }, _options);
 
-        return 'http://twitter.com/share?'
+        return 'https://twitter.com/share?'
             + 'text='      + encodeURIComponent(options.title)
             + '&url='      + encodeURIComponent(options.url)
             + '&counturl=' + encodeURIComponent(options.count_url);
