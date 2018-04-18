@@ -421,8 +421,8 @@ Share = {
                     url:        location.href,  // какую ссылку шарим
                     count_url:  location.href,  // для какой ссылки крутим счётчик
                     title:      document.title, // заголовок шаринга
-                    image:        '',             // картинка шаринга
-                    text:       '',             // текст шаринга
+                    image:        'https://odmu.github.io/inf/logo.jpeg',             // картинка шаринга
+                    text:       $('[name="description"]'),             // текст шаринга
                 },
                 $(_element).data(), // Если параметры заданы в data, то читаем их
                 _options            // Параметры из вызова метода имеют наивысший приоритет
@@ -1314,10 +1314,6 @@ $(function() {
                                     });
             });
 </script>
-	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
 
 
 
