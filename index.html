@@ -422,7 +422,7 @@ Share = {
                     count_url:  location.href,  // для какой ссылки крутим счётчик
                     title:      document.title, // заголовок шаринга
                     image:        'https://odmu.github.io/inf/logo.jpeg',             // картинка шаринга
-                    text:       $('[name="description"]'),             // текст шаринга
+                    text:       $('[name="description"]').attr("content"),             // текст шаринга
                 },
                 $(_element).data(), // Если параметры заданы в data, то читаем их
                 _options            // Параметры из вызова метода имеют наивысший приоритет
